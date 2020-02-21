@@ -1,0 +1,12 @@
+{
+    "request_id": "17cb78a7-b672-4d34-a288-a6c6e44d5315",
+    "subtotal": "$14.78",
+    "total_charged": "$14.78",
+    "total_owed": null,
+    "total_fare": "$14.78",
+    "currency_code": "USD",
+    "charge_adjustments": [],
+    "duration": "00:51:35",
+    "distance": "6.17",
+    "distance_label": "miles"
+  }

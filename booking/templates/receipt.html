@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Receipt</title>
+    <h1>Your receipt : </h1>
+</head>
+<body>
+    <table border="1">
+            <tr>
+                <td>Subtotal</td>
+                <td>{{ receipt.subtotal }}</td>
+            </tr>
+            <tr>
+                <td>Total Charged</td>
+                <td>{{ receipt.total_charged }}</td>
+            </tr>
+            <tr>
+                <td>Total Due</td>
+                <td>{{ receipt.total_owed }}</td>
+            </tr>
+            <tr>
+                <td>Total Fare</td>
+                <td>{{ receipt.total_fare }}</td>
+            </tr>
+            <tr>
+                <td>Distance</td>
+                <td>{{ receipt.distance }} {{ receipt.distance_label }}</td>
+            </tr>
+            <tr>
+                <td>Duration</td>
+                <td>{{ receipt.duration }}</td>
+            </tr>
+    </table>
+    <h4>Thankyou &#128578</h4>
+</body>
+</html>

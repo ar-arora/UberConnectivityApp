@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Products available at your location</title>
+    <h1>Search Products available at your location</h1>
+</head>
+<body>
+    <form action="/products/available/" method="POST">
+        <p> 
+            Latitude :
+            <input type="text" name=latitude>
+        </p>
+        <p>
+             Longitude :
+             <input type="text" name=longitude>
+        </p>
+            <button type="submit">Search Products</button>
+    </form>
+    <form action="/products/available/" method="GET">
+            <button type="submit">Get a JSON of products</button>
+    </form>
+</body>
+</html>

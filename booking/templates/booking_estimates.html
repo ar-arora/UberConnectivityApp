@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estimates</title>
+    <h1>Estimates for {{ product_price.localized_display_name }} : </h1>
+    <h5>(assuming I already have the starting and ending latitudes and longitudes)</h5>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Distance</th>
+            <th>High estimate</th>
+            <th>Low estimate</th>
+            <th>Price Estimate</th>
+            <th>Time Estimate</th>
+        </tr>
+            <tr>
+                <td>{{ product_price.localized_display_name }}</td>
+                <td>{{ product_price.distance }}</td>
+                <td>{{ product_price.high_estimate }}</td>
+                <td>{{ product_price.low_estimate }}</td>
+                <td>{{ product_price.estimate }}</td>
+                <td>{{ product_time.estimate }}</td>
+            </tr>
+    </table>
+    <form action="/booking/details/{{product_price.product_id}}" method="POST">
+        <button type="submit">Book Ride</button>
+    </form>
+</body>
+</html>
